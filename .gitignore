@@ -1,0 +1,24 @@
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+/.idea/misc.xml
+/.idea/gradle.xml
+/.idea/modules.xml
+.DS_Store
+/build
+/captures
+# built application files
+*.apk
+*.ap_
+*.iml
+gen/
+libraries/gen/
+/.idea
+/common/src/androidTest/
+/common/src/test/
+/common/build/
+/bin
+.settings
+.classpath
+.springBeans
