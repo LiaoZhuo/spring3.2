@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://www.lexueba.com/schema/user"
+	xmlns:tns="http://www.lexueba.com/schema/user" 
+	elementFormDefault="qualified">
+	
+	<element name="user">
+		<complexType>
+			<attribute id="id" type="string"/>
+			<attribute id="username" type="string"/>
+			<attribute id="email" type="string"/>
+		</complexType>
+	</element>
+</schema>

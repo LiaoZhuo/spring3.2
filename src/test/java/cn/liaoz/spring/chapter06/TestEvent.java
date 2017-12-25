@@ -1,0 +1,20 @@
+package cn.liaoz.spring.chapter06;
+
+import org.springframework.context.ApplicationEvent;
+
+public class TestEvent extends ApplicationEvent {
+
+	private String msg;
+	
+	public TestEvent(Object source) {
+		super(source);
+	}
+	public TestEvent(Object source, String msg) {
+		super(source);
+		this.msg = msg;
+	}
+	
+	public void printMsg() {
+		System.out.println(msg);
+	}
+}

@@ -5,4 +5,7 @@ public class Student extends User {
 	public void showMe() {
 		System.out.println("I am student");
 	}
+	public void hello() {
+		System.out.println("hello student");
+	}
 }

@@ -5,10 +5,10 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 
-	<bean id="getBeanTest" class="cn.liaoz.spring.chapter03.GetBeanTest">
+	<bean id="getBeanTest" class="cn.liaoz.spring.chapter03.lookup.GetBeanTest">
 		<lookup-method name="getBean" bean="student"/>
 	</bean>
 
-	<bean id="student" class="cn.liaoz.spring.chapter03.Student"></bean>
-	<bean id="teacher" class="cn.liaoz.spring.chapter03.Teacher"></bean>
+	<bean id="student" class="cn.liaoz.spring.chapter03.lookup.Student"></bean>
+	<bean id="teacher" class="cn.liaoz.spring.chapter03.lookup.Teacher"></bean>
 </beans>

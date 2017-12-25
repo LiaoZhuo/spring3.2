@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:myname="http://www.lexueba.com/schema/user"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+		http://www.lexueba.com/schema/user http://www.lexueba.com/schema/user.xsd">
+
+	<bean id="userManager" class="cn.liaoz.spring.chapter06.UserManager">
+		<property name="dataValue" value="2017-12-25">
+		</property>
+	</bean>
+	
+	<bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+		<property name="customEditors">
+			<map>
+				<entry key="java.util.Date">
+					<bean class="cn.liaoz.spring.chapter06.DatePropertyEditor">
+						<property name="format" value="yyyy-MM-dd"></property>
+					</bean>
+				</entry>
+			</map>
+		</property>
+	</bean>
+	
+	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basenames">
+			<list>
+				<value>messages</value>
+				<value>messages_zh_CN</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="testListener" class="cn.liaoz.spring.chapter06.TestListener"></bean>
+</beans>

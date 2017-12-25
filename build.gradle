@@ -33,7 +33,13 @@ dependencies {
 	compile group: 'org.springframework', name: 'spring-beans', version: '3.2.18.RELEASE'
 	// https://mvnrepository.com/artifact/org.springframework/spring-test
 	testCompile group: 'org.springframework', name: 'spring-test', version: '3.2.18.RELEASE'
+	// https://mvnrepository.com/artifact/org.springframework/spring-tx
+	compile group: 'org.springframework', name: 'spring-tx', version: '3.2.18.RELEASE'
+	// https://mvnrepository.com/artifact/org.springframework/spring-aop
+	compile group: 'org.springframework', name: 'spring-aop', version: '3.2.18.RELEASE'
 
+    // https://mvnrepository.com/artifact/org.springframework/spring-aspects
+	compile group: 'org.springframework', name: 'spring-aspects', version: '3.2.18.RELEASE'
     
 }
 
